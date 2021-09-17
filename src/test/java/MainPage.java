@@ -116,6 +116,8 @@ public class MainPage {
         Assert.assertEquals(currentUrl, expectedUrlTourToUkraine);
     }
 
+
+
     @Test
     public void testJoin(){
         //By.xpath("//input[@id='password']")
