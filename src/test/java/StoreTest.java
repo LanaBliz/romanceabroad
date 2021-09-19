@@ -4,14 +4,12 @@ import org.testng.annotations.Test;
 
 public class StoreTest extends BaseUI{
     String currentUrl;
-    String expectedUrlSStore = "https://romanceabroad.com/store/category-sweets";
-    By LINK_STORE = By.cssSelector("a[href='https://romanceabroad.com/store/category-sweets']");
 
     @Test
     public void testStore(){
-        driver.findElement(LINK_STORE).click();
+        driver.findElement(Locators.LINK_STORE).click();
         currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);
-        Assert.assertEquals(currentUrl, expectedUrlSStore);
+        Assert.assertEquals(currentUrl, Data.expectedUrlSStore);
     }
 }

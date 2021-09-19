@@ -5,10 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dd91c2c-c530-4207-92d9-fd1cf88ad926" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BlogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BlogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookNowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookNowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JoinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JoinTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PhotoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhotoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StoreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TourToUkrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TourToUkrainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BlogTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BookNowTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HomeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/JoinTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PhotoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RegButtonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SearchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StoreTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TourToUkrainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ViewTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="TestNG.BlogTest.testBlog">
+  <component name="RunManager" selected="TestNG.TourToUkrainTest.testTourToUkraine">
     <configuration name="BlogTest.testBlog" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="romanceabroad2" />
       <option name="PACKAGE_NAME" value="" />
@@ -72,6 +94,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TourToUkrainTest.testTourToUkraine" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="romanceabroad" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TourToUkrainTest" />
+      <option name="METHOD_NAME" value="testTourToUkraine" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ViewTest.testView" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="romanceabroad2" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TourToUkrainTest.testTourToUkraine" />
         <item itemvalue="TestNG.BlogTest.testBlog" />
         <item itemvalue="TestNG.SignIn.testSignIn" />
         <item itemvalue="TestNG.PhotoTest.testPhoto" />
