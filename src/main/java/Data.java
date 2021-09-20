@@ -1,8 +1,8 @@
 import org.openqa.selenium.By;
 
 public class Data {
-    public static final String email = "12@gmail.com";
-    public static final String password = "12@gmail.com";
+    public static final String email = "11@gmail.com";
+    public static final String password = "338377377m";
 
     //Blog Test
     public static final String expectedUrlBlog = "https://romanceabroad.com/content/view/blog";

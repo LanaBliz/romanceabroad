@@ -1,5 +1,3 @@
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class RegButtonTest extends BaseUI{
@@ -10,6 +8,7 @@ public class RegButtonTest extends BaseUI{
         driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(Data.email);
         driver.findElement(Locators.TEXT_FIELD_PASSWORD).sendKeys(Data.password);
         driver.findElement(Locators.BUTTON).click();
+        // no valid email address and password
     }
 
 }

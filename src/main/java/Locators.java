@@ -31,7 +31,7 @@ public class Locators {
 
     //Store Test
     public static final By LINK_STORE = By.cssSelector("a[href='https://romanceabroad.com/store/category-sweets']");
-    
+
     //View Test
     public static final By LINK_VIEW = By.xpath("//a[@href='https://romanceabroad.com/content/view/how-it-works']");
 }

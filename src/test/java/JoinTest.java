@@ -1,4 +1,3 @@
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,7 +6,6 @@ public class JoinTest extends BaseUI{
 
     @Test
     public void testJoin(){
-        //By.xpath("//input[@id='password']")
         driver.findElement(Locators.LINK_JOIN).click();
         currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);
