@@ -25,6 +25,9 @@ public class Locators {
 
     //Search Test
     public static final By LINK_SEARCH = By.xpath("//a[@href='https://romanceabroad.com/users/search']");
+    public static final By DROP_DOWN_LIST_SORT_BY = By.xpath("//div[@class='pull-left pl15']//select");
+    public static final By DROP_DOWN_LIST_MIN_AGE = By.xpath("//div[@class='col-xs-5 no-padding-left']//select");
+    public static final By DROP_DOWN_LIST_MAX_AGE = By.xpath("//div[@class='col-xs-5 no-padding-right']//select");
 
     //Sign In test
     public static final By LINK_SIGN_IN = By.xpath("//a[@href='https://romanceabroad.com/users/login_form']");
@@ -34,4 +37,8 @@ public class Locators {
 
     //View Test
     public static final By LINK_VIEW = By.xpath("//a[@href='https://romanceabroad.com/content/view/how-it-works']");
+
+    //Iframe Test
+    public static final By YOUTUBE_VIDEO_BUTTON = By.cssSelector("button[class='ytp-large-play-button ytp-button']");
+    public static final By LINK_IFRAME = By.cssSelector("iframe[src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");
 }

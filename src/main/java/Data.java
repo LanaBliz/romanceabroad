@@ -1,5 +1,3 @@
-import org.openqa.selenium.By;
-
 public class Data {
     public static final String email = "11@gmail.com";
     public static final String password = "338377377m";
@@ -18,6 +16,9 @@ public class Data {
 
     //Search Test
     public static final String expectedUrlSearch = "https://romanceabroad.com/users/search";
+    public static final int dropDownListSortByIndex = 3;
+    public static final String dropDownListMinAgeValue = "21";
+    public static final String dropDownListMaxAgeText = "25";
 
     //Store Test
     public static final String expectedUrlSStore = "https://romanceabroad.com/store/category-sweets";
