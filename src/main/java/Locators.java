@@ -16,6 +16,8 @@ public class Locators {
     public static final By TEXT_FIELD_PASSWORD = By.cssSelector("input#password");
     public static final By LINK_JOIN = By.cssSelector("a[data-action='show-registration-block']");
     public static final By BUTTON = By.xpath("//button[@data-action='next-page'][text()='Next']");
+    public static final By TEXT_FIELD_NICKNAME = By.cssSelector("input#nickname");
+    public static final By TEXT_FIELD_PHONE = By.xpath("//input[@name='data[phone]']");
 
     //Photo Test
     public static final By LINK_MEDIA = By.cssSelector("a[href='https://romanceabroad.com/media/index']");

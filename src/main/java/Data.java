@@ -1,6 +1,6 @@
 public class Data {
-    public static final String email = "11@gmail.com";
-    public static final String password = "338377377m";
+    public static final String email = "stella_foxx@gmail.com";
+    public static final String password = "123456789";
 
     //Blog Test
     public static final String expectedUrlBlog = "https://romanceabroad.com/content/view/blog";
@@ -25,4 +25,8 @@ public class Data {
 
     //View Test
     public static final String expectedUrlView = "https://romanceabroad.com/content/view/how-it-works";
+
+    //Reg Button Test
+    public static final String nickname = "stella_foxx";
+    public static final String phone = "914258456";
 }
