@@ -7,9 +7,9 @@ import org.testng.annotations.BeforeMethod;
 public class BaseUI {
     WebDriver driver;
     WebDriverWait wait;
-    String mainUrl = "https://romanceabroad.com/";
     MainPage mainPage;
     SearchPage searchPage;
+    RegistrationForm registrationForm;
 
     @BeforeMethod
     public void setUp() {
@@ -18,8 +18,9 @@ public class BaseUI {
         wait = new WebDriverWait(driver, 20);
         mainPage = new MainPage(driver, wait);
         searchPage = new SearchPage(driver, wait);
+        registrationForm = new RegistrationForm(driver, wait);
         driver.manage().window().maximize();
-        driver.get(mainUrl);
+        driver.get(Data.mainUrl);
     }
 
     @AfterMethod

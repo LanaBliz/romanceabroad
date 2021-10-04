@@ -2,6 +2,8 @@ public class Data {
     public static final String email = "stella_foxx@gmail.com";
     public static final String password = "123456789";
 
+    public static final String mainUrl = "https://romanceabroad.com/";
+
     //Blog Test
     public static final String expectedUrlBlog = "https://romanceabroad.com/content/view/blog";
 

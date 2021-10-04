@@ -18,6 +18,13 @@ public class Locators {
     public static final By BUTTON = By.xpath("//button[@data-action='next-page'][text()='Next']");
     public static final By TEXT_FIELD_NICKNAME = By.cssSelector("input#nickname");
     public static final By TEXT_FIELD_PHONE = By.xpath("//input[@name='data[phone]']");
+    public static final By BUTTON_SELECT_DAY = By.cssSelector("#daySelect");
+    public static final By SELECT_DAY = By.xpath("//li[@data-handler='selectDay']//a[text()='2']");
+    public static final By BUTTON_SELECT_MONTH = By.cssSelector("#monthSelect");
+    public static final By SELECT_MONTH = By.xpath("//li[@data-handler='selectMonth']//a[text()='Jan']");
+    public static final By BUTTON_SELECT_YEAR = By.cssSelector("#yearSelect");
+    public static final By SELECT_YEAR = By.xpath("//li[@data-handler='selectYear']//a[text()='1999']");
+    public static final By CHECKBOX_CONFIRMATION = By.cssSelector("input#confirmation");
 
     //Photo Test
     public static final By LINK_MEDIA = By.cssSelector("a[href='https://romanceabroad.com/media/index']");
