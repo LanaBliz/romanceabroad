@@ -34,8 +34,6 @@ public class MainPage extends BaseActions{
         driver.findElement(Locators.BUTTON_SELECT_YEAR).click();
         driver.findElement(Locators.SELECT_YEAR).click();
         driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phone);
-        WebElement checkboxConfirmation = driver.findElement(Locators.CHECKBOX_CONFIRMATION);
-        checkboxConfirmation.click();
     }
 
     public void clickJoinTodayLink(){
