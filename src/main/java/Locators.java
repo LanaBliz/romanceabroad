@@ -43,6 +43,7 @@ public class Locators {
 
     //Store Test
     public static final By LINK_STORE = By.cssSelector("a[href='https://romanceabroad.com/store/category-sweets']");
+    public static final By GIFT_BLOCK = By.xpath("//div[@class='contrasting-block']");
 
     //View Test
     public static final By LINK_VIEW = By.xpath("//a[@href='https://romanceabroad.com/content/view/how-it-works']");
@@ -50,4 +51,8 @@ public class Locators {
     //Iframe Test
     public static final By YOUTUBE_VIDEO_BUTTON = By.cssSelector("button[class='ytp-large-play-button ytp-button']");
     public static final By LINK_IFRAME = By.cssSelector("iframe[src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");
+
+    //Conditions
+    public static final By TITLE_OF_PAGE = By.xpath("//h1");
+    public static final  By TAB_OF_MAIN_PAGE = By.xpath("//ul[@class='navbar-nav']/li");
 }

@@ -10,14 +10,13 @@ import java.util.List;
 public class Conditions extends BaseUI {
 
     @Test
-    public void test1(){
+    public void test1() {
         String fruit = "orange";
         String fruit2 = "kiwi";
 
-        if (fruit2.contains("kiwi") || fruit.contains("kiwi")){
+        if (fruit2.contains("kiwi") || fruit.contains("kiwi")) {
             System.out.println("We can find our fruit");
-        }
-        else{
+        } else {
             Assert.fail("We can't find fruit");
         }
 
@@ -29,10 +28,10 @@ public class Conditions extends BaseUI {
         int number2 = 10;
         int sum;
 
-        if (number2 ==number1) {
-            sum = 95+100;
-        }else{
-            sum = 100-95;
+        if (number2 == number1) {
+            sum = 95 + 100;
+        } else {
+            sum = 100 - 95;
         }
         System.out.println(sum);
     }
@@ -50,9 +49,9 @@ public class Conditions extends BaseUI {
     @Test
     public void test4() {
         WebElement tabSearch = driver.findElement(Locators.LINK_SEARCH);
-        if (tabSearch.isDisplayed()){
+        if (tabSearch.isDisplayed()) {
             tabSearch.click();
-        }else{
+        } else {
             Assert.fail("\"We can't find Pretty Women tab\"");
         }
 
@@ -65,15 +64,15 @@ public class Conditions extends BaseUI {
 
         WebElement checkbox = driver.findElement(Locators.CHECKBOX_CONFIRMATION);
 
-       if (!checkbox.isSelected()){
-           checkbox.click();
-           System.out.println("Checkbox is selected!");
-       }
+        if (!checkbox.isSelected()) {
+            checkbox.click();
+            System.out.println("Checkbox is selected!");
+        }
 
     }
 
     @Test
-    public void test6(){
+    public void test6() {
         /*List<String> crunchifyList1 = new ArrayList<>(Arrays.asList("kiwi", "orange"));
         String element = crunchifyList1.get(0);
         System.out.println(element);
@@ -83,28 +82,85 @@ public class Conditions extends BaseUI {
         }*/
 
         List<Integer> crunchifyList1 = new ArrayList<>(Arrays.asList(5, 10, 19));
-        int sum = crunchifyList1.get(1)+crunchifyList1.get(2);
+        int sum = crunchifyList1.get(1) + crunchifyList1.get(2);
         System.out.println(sum);
 
     }
 
     @Test
-    public void test7(){
-        List<WebElement>links = driver.findElements(By.xpath("//ul[@class='navbar-nav']/li"));
+    public void test7() {
+        String actualTitle;
+        String actualUrlPrettyWomen;
+        String expectedUrlPrettyWomen = "https://romanceabroad.com/users/search";
+        String expectedTitleHowWeWork = "Ukrainian women for marriage";
+        String expectedTitlePrettyWomen = "Single Ukrainian women online";
+        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
-        for (int i = 0; i< links.size(); i++){
+        for (int i = 0; i < links.size(); i++) {
             /*WebElement elementOfList = links.get(i);
             String info = elementOfList.getText();*/
             String info = links.get(i).getText();
             System.out.println(info);
-
             links.get(i).click();
+
+            if (info.contains("WORK")) {
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
+                Assert.assertEquals(expectedTitleHowWeWork, actualTitle);
+            }
+            if (info.contains("PRETTY_WOMEN")) {
+                actualUrlPrettyWomen = driver.getCurrentUrl();
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
+                Assert.assertEquals(expectedUrlPrettyWomen, actualUrlPrettyWomen);
+                driver.findElement(By.xpath("//a[@class='g-pic-border g-grounded']")).isDisplayed();
+            }
+
             driver.get(Data.mainUrl);
-            links = driver.findElements(By.xpath("//ul[@class='navbar-nav']/li"));
+            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
 
         }
 
     }
+
+    @Test
+    public void test8() {
+        List<Integer> crunchifyList1 = new ArrayList<>(Arrays.asList(5, 10, 19));
+        crunchifyList1.add(10);
+        System.out.println(crunchifyList1.size());
+
+        for (int i = 0; i < crunchifyList1.size(); i++) {
+            int element = crunchifyList1.get(i);
+            System.out.println(element);
+        }
+
+    }
+
+    @Test
+    public void test9() {
+        String phrase = "Melon is inside list";
+        List<String> crunchifyList1 = new ArrayList<>(Arrays.asList("apple", "kiwi", phrase));
+        crunchifyList1.add("melon");
+        System.out.println(crunchifyList1.size());
+
+        for (int i = 0; i < crunchifyList1.size(); i++) {
+            String element = crunchifyList1.get(i);
+            System.out.println(i + "iteration");
+
+
+            /*if (element.contains("apple")) {
+                System.out.println(phrase);
+                break;
+                //continue;
+            }if (element.equals("orange")){
+                System.out.println("Orange");
+            }if (element.contains("i")){
+                System.out.println("III");
+            }else{
+                System.out.println("Bed loop");
+            }*/
+        }
+
+    }
+
 
 }
 

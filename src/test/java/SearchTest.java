@@ -16,7 +16,6 @@ public class SearchTest extends BaseUI {
 
         searchPage.selectSortBy();
         searchPage.selectMinAndMaxAge();
-
         softAssert.assertAll();
     }
     public void validateAssertions(){
