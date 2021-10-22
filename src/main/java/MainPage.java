@@ -38,6 +38,7 @@ public class MainPage extends BaseActions{
 
     public void clickJoinTodayLink(){
         String currentUrl;
+        //ajaxClick(driver.findElement(Locators.LINK_JOIN));
         driver.findElement(Locators.LINK_JOIN).click();
         currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);

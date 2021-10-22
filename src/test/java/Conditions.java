@@ -1,5 +1,7 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -91,9 +93,7 @@ public class Conditions extends BaseUI {
     public void test7() {
         String actualTitle;
         String actualUrlPrettyWomen;
-        String expectedUrlPrettyWomen = "https://romanceabroad.com/users/search";
-        String expectedTitleHowWeWork = "Ukrainian women for marriage";
-        String expectedTitlePrettyWomen = "Single Ukrainian women online";
+        String expectedTitleHowWeWork = "UKRAINIAN GIRLS DATING SITE";
         List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
         for (int i = 0; i < links.size(); i++) {
@@ -101,17 +101,25 @@ public class Conditions extends BaseUI {
             String info = elementOfList.getText();*/
             String info = links.get(i).getText();
             System.out.println(info);
-            links.get(i).click();
+            //links.get(i).click();
+            mainPage.ajaxClick(links.get(i));
 
             if (info.contains("WORK")) {
                 actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
-                Assert.assertEquals(expectedTitleHowWeWork, actualTitle);
+                Assert.assertEquals(actualTitle, expectedTitleHowWeWork);
             }
             if (info.contains("PRETTY_WOMEN")) {
-                actualUrlPrettyWomen = driver.getCurrentUrl();
                 actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
-                Assert.assertEquals(expectedUrlPrettyWomen, actualUrlPrettyWomen);
-                driver.findElement(By.xpath("//a[@class='g-pic-border g-grounded']")).isDisplayed();
+                actualUrlPrettyWomen = driver.getCurrentUrl();
+                Assert.assertEquals(Data.expectedUrlTitlePrettyWomen, actualTitle);
+                Assert.assertEquals(actualUrlPrettyWomen, Data.expectedUrlPrettyWomen);
+                driver.findElement(Locators.IMAGES).isDisplayed();
+
+                if (actualUrlPrettyWomen.contains("#")){
+                    Assert.fail("It contains restricted #");
+                }else{
+                    System.out.println("No special character. It is good URL");
+                }
             }
 
             driver.get(Data.mainUrl);
@@ -160,6 +168,28 @@ public class Conditions extends BaseUI {
         }
 
     }
+
+    @Test
+    public void test10 (){
+       mainPage.ajaxClick(Locators.TAB_OF_MAIN_PAGE, 3);
+    }
+
+    @Test
+    public void test11 (){
+        mainPage.performClick(Locators.TAB_OF_MAIN_PAGE);
+    }
+
+    @Test
+    public void test12 (){
+        mainPage.performClick(Locators.TAB_OF_MAIN_PAGE, 4);
+    }
+
+    @Test
+    public void test13 (){
+        mainPage.scrollToBottomOfPage();
+    }
+
+
 
 
 }

@@ -55,4 +55,5 @@ public class Locators {
     //Conditions
     public static final By TITLE_OF_PAGE = By.xpath("//h1");
     public static final  By TAB_OF_MAIN_PAGE = By.xpath("//ul[@class='navbar-nav']/li");
+    public static final By IMAGES = By.xpath("//a[@class='g-pic-border g-grounded']");
 }
