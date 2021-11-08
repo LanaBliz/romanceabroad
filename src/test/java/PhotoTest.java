@@ -6,9 +6,6 @@ public class PhotoTest extends BaseUI{
 
     @Test
     public void testPhoto(){
-        driver.findElement(Locators.LINK_MEDIA).click();
-        currentUrl = driver.getCurrentUrl();
-        System.out.println(currentUrl);
-        Assert.assertEquals(currentUrl, Data.expectedUrlMedia);
+        photoPage.photoUrlEqualityAssertoin();
     }
 }

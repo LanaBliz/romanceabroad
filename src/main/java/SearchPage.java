@@ -1,13 +1,51 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.util.List;
 
 public class SearchPage extends BaseActions{
 
     public SearchPage(WebDriver driver, WebDriverWait wait){
         super(driver, wait);
 
+    }
+
+    public void List(){
+        String actualTitle;
+        String actualUrlSearch;
+
+        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+        System.out.println(links.size());
+        for (int i = 0; i < links.size(); i++) {
+            String info = links.get(i).getText();
+            System.out.println(info);
+            links.get(i).click();
+
+            if (info.contains("WORK")) {
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
+                Assert.assertEquals(actualTitle, Data.expectedTitleHowWeWork);
+            }
+            if (info.contains("PRETTY_WOMEN")) {
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
+                actualUrlSearch = driver.getCurrentUrl();
+                Assert.assertEquals(actualTitle, Data.expectedUrlSearch);
+                Assert.assertEquals(actualUrlSearch, Data.expectedUrlSearch);
+                driver.findElement(Locators.IMAGES).isDisplayed();
+
+                if (actualUrlSearch.contains("#")){
+                    Assert.fail("It contains restricted #");
+                }else{
+                    System.out.println("No special character. It is good URL");
+                }
+            }
+
+            driver.get(Data.mainUrl);
+            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+
+        }
     }
 
     public void clickSearchButton(){
@@ -34,6 +72,7 @@ public class SearchPage extends BaseActions{
         WebElement dropDownListSortByMaxAge = driver.findElement(Locators.DROP_DOWN_LIST_MAX_AGE);
         getDropDownListByText(dropDownListSortByMaxAge, Data.dropDownListMaxAgeText);
     }
+
 
 
 }

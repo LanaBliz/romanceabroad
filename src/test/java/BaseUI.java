@@ -16,7 +16,10 @@ public class BaseUI {
     WebDriverWait wait;
     MainPage mainPage;
     SearchPage searchPage;
+    HomePage homePage;
+    PhotoPage photoPage;
     RegistrationForm registrationForm;
+    StorePage storePage;
     SoftAssert softAssert = new SoftAssert();
 
     @BeforeMethod
@@ -54,6 +57,9 @@ public class BaseUI {
         mainPage = new MainPage(driver, wait);
         searchPage = new SearchPage(driver, wait);
         registrationForm = new RegistrationForm(driver, wait);
+        homePage = new HomePage(driver, wait);
+        photoPage = new PhotoPage(driver,wait);
+        storePage = new StorePage(driver, wait);
         driver.manage().window().maximize();
         driver.get(Data.mainUrl);
     }

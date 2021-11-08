@@ -41,6 +41,7 @@ public class BaseActions {
     public void ajaxClick (WebElement element){
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
         wait.until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
     }
 
     public void ajaxClick (By by){
@@ -84,5 +85,27 @@ public class BaseActions {
 
     public void scrollToBottomOfPage(){
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,document.body.scrollHeight);");
+    }
+
+    public void getTextString (By locator, String text){
+        driver.findElement(locator).getText();
+        System.out.println(text);
+    }
+
+    public void getTextNumber (By locator, int number){
+        driver.findElement(locator).getText();
+        System.out.println(number);
+    }
+
+    public void getNavigateToLinkPage (By locator){driver.findElement(locator).click();}
+
+    public void getElementIsDisplayed (By locator){
+        WebElement element = driver.findElement(locator);
+        boolean elementDisplayed = element.isDisplayed();
+        if (element.isDisplayed()){
+            System.out.println(elementDisplayed + "" + "element is displayed");
+        }else{
+            System.out.println(elementDisplayed + "" + "element is not displayed");
+        }
     }
 }

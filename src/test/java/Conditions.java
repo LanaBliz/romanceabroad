@@ -93,7 +93,7 @@ public class Conditions extends BaseUI {
     public void test7() {
         String actualTitle;
         String actualUrlPrettyWomen;
-        String expectedTitleHowWeWork = "UKRAINIAN GIRLS DATING SITE";
+        String expectedTitleHowWeWork = "Ukrainian women for marriage";
         List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
         for (int i = 0; i < links.size(); i++) {

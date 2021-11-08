@@ -1,21 +1,19 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import java.util.concurrent.TimeUnit;
-
-public class MainPage extends BaseActions{
-    public MainPage(WebDriver driver, WebDriverWait wait){
+public class MainPage extends BaseActions {
+    public MainPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
     }
 
-    public void clickJoinButton(){
+    public void clickJoinButton() {
         driver.findElement(Locators.BUTTON_REGISTRATION).click();
     }
 
-    public void completeFirstPartOfRegistration(){
+    public void completeFirstPartOfRegistration() {
         //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(Data.email);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_FIELD_PASSWORD)));
@@ -25,7 +23,7 @@ public class MainPage extends BaseActions{
         driver.findElement(Locators.BUTTON).click();
     }
 
-    public void completeSecondPartOfRegistration(){
+    public void completeSecondPartOfRegistration() {
         driver.findElement(Locators.TEXT_FIELD_NICKNAME).sendKeys(generateNewNumber(Data.nickname, 10));
         driver.findElement(Locators.BUTTON_SELECT_DAY).click();
         driver.findElement(Locators.SELECT_DAY).click();
@@ -36,7 +34,7 @@ public class MainPage extends BaseActions{
         driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phone);
     }
 
-    public void clickJoinTodayLink(){
+    public void clickJoinTodayLink() {
         String currentUrl;
         //ajaxClick(driver.findElement(Locators.LINK_JOIN));
         driver.findElement(Locators.LINK_JOIN).click();
@@ -46,7 +44,43 @@ public class MainPage extends BaseActions{
         /*driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(Data.email);
         driver.findElement(Locators.TEXT_FIELD_PASSWORD).sendKeys(Data.password);
         driver.findElement(Locators.BUTTON).click();
-        driver.findElement(Locators.BUTTON).click()*/;
+        driver.findElement(Locators.BUTTON).click()*/
+        ;
     }
+
+    public void blogUrlAssertionEquality() {
+        String currentUrl;
+        driver.findElement(Locators.LINK_BLOG).click();
+        currentUrl = driver.getCurrentUrl();
+        System.out.println(currentUrl);
+        Assert.assertEquals(currentUrl, Data.expectedUrlBlog);
+    }
+
+    public void bookNowUrlAssertionEquality() {
+        String currentUrl;
+        int indexLinkBookNow = 0;
+        driver.findElements(Locators.LINK_TOUR_TO_UKRAINE).get(indexLinkBookNow).click();
+        currentUrl = driver.getCurrentUrl();
+        System.out.println(currentUrl);
+        Assert.assertEquals(currentUrl, Data.expectedUrlTourToUkraine);
+    }
+
+    public void tourToUkraineAssertionEquality (){
+        String currentUrl;
+        int indexLinkTourToUkraine = 1;
+        driver.findElements(Locators.LINK_TOUR_TO_UKRAINE).get(indexLinkTourToUkraine).click();
+        currentUrl = driver.getCurrentUrl();
+        System.out.println(currentUrl);
+        Assert.assertEquals(currentUrl, Data.expectedUrlTourToUkraine);
+    }
+
+    public void viewAssertionEquality (){
+        String currentUrl;
+        driver.findElement(Locators.LINK_VIEW).click();
+        currentUrl = driver.getCurrentUrl();
+        System.out.println(currentUrl);
+        Assert.assertEquals(currentUrl, Data.expectedUrlView);
+    }
+
 
 }

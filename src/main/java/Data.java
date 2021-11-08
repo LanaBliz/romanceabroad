@@ -22,6 +22,7 @@ public class Data {
     public static final int dropDownListSortByIndex = 3;
     public static final String dropDownListMinAgeValue = "21";
     public static final String dropDownListMaxAgeText = "25";
+    public static final String expectedTitleHowWeWork = "Ukrainian women for marriage";
 
     //Store Test
     public static final String expectedUrlSStore = "https://romanceabroad.com/store/category-sweets";
