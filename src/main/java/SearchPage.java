@@ -31,7 +31,7 @@ public class SearchPage extends BaseActions{
             if (info.contains("PRETTY_WOMEN")) {
                 actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
                 actualUrlSearch = driver.getCurrentUrl();
-                Assert.assertEquals(actualTitle, Data.expectedUrlSearch);
+                Assert.assertEquals(Data.expectedUrlSearch, actualTitle);
                 Assert.assertEquals(actualUrlSearch, Data.expectedUrlSearch);
                 driver.findElement(Locators.IMAGES).isDisplayed();
 
@@ -73,6 +73,11 @@ public class SearchPage extends BaseActions{
         getDropDownListByText(dropDownListSortByMaxAge, Data.dropDownListMaxAgeText);
     }
 
+    public void searchPageAssertionsValidation (){
+        Assert.assertEquals("Web","Web is");
+        Assert.assertTrue(driver.findElement(By.xpath("//a")).isSelected(), "Element is not displayed");
+        Assert.fail("Element is not displayed");
+    }
 
 
 }

@@ -176,12 +176,12 @@ public class Conditions extends BaseUI {
 
     @Test
     public void test11 (){
-        mainPage.performClick(Locators.TAB_OF_MAIN_PAGE);
+        mainPage.perfomClick(Locators.TAB_OF_MAIN_PAGE);
     }
 
     @Test
     public void test12 (){
-        mainPage.performClick(Locators.TAB_OF_MAIN_PAGE, 4);
+        mainPage.perfomClick(Locators.TAB_OF_MAIN_PAGE, 4);
     }
 
     @Test
