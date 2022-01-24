@@ -8,7 +8,8 @@ public class PhotoTest extends BaseUI {
     @Test
     public void testPhoto() {
         wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_MEDIA));
-        driver.findElement(Locators.LINK_MEDIA).click();
+        /*driver.findElement(Locators.LINK_MEDIA).click();*/
+        mainPage.ajaxClick(driver.findElement(Locators.LINK_MEDIA));
         mainPage.javaWaitSec(5);
         currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);
