@@ -1,8 +1,6 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 public class MainPage extends BaseActions {
     public MainPage(WebDriver driver, WebDriverWait wait) {
@@ -33,54 +31,5 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.SELECT_YEAR).click();
         driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phone);
     }
-
-    public void clickJoinTodayLink() {
-        String currentUrl;
-        //ajaxClick(driver.findElement(Locators.LINK_JOIN));
-        driver.findElement(Locators.LINK_JOIN).click();
-        currentUrl = driver.getCurrentUrl();
-        System.out.println(currentUrl);
-        Assert.assertEquals(currentUrl, Data.expectedUrlHome);
-        /*driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(Data.email);
-        driver.findElement(Locators.TEXT_FIELD_PASSWORD).sendKeys(Data.password);
-        driver.findElement(Locators.BUTTON).click();
-        driver.findElement(Locators.BUTTON).click()*/
-        ;
-    }
-
-    public void blogUrlAssertionEquality() {
-        String currentUrl;
-        driver.findElement(Locators.LINK_BLOG).click();
-        currentUrl = driver.getCurrentUrl();
-        System.out.println(currentUrl);
-        Assert.assertEquals(currentUrl, Data.expectedUrlBlog);
-    }
-
-    public void bookNowUrlAssertionEquality() {
-        String currentUrl;
-        int indexLinkBookNow = 0;
-        driver.findElements(Locators.LINK_TOUR_TO_UKRAINE).get(indexLinkBookNow).click();
-        currentUrl = driver.getCurrentUrl();
-        System.out.println(currentUrl);
-        Assert.assertEquals(currentUrl, Data.expectedUrlTourToUkraine);
-    }
-
-    public void tourToUkraineAssertionEquality (){
-        String currentUrl;
-        int indexLinkTourToUkraine = 1;
-        driver.findElements(Locators.LINK_TOUR_TO_UKRAINE).get(indexLinkTourToUkraine).click();
-        currentUrl = driver.getCurrentUrl();
-        System.out.println(currentUrl);
-        Assert.assertEquals(currentUrl, Data.expectedUrlTourToUkraine);
-    }
-
-    public void viewAssertionEquality (){
-        String currentUrl;
-        driver.findElement(Locators.LINK_VIEW).click();
-        currentUrl = driver.getCurrentUrl();
-        System.out.println(currentUrl);
-        Assert.assertEquals(currentUrl, Data.expectedUrlView);
-    }
-
 
 }

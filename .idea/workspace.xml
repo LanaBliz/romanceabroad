@@ -6,17 +6,44 @@
   <component name="ChangeListManager">
     <list default="true" id="6dd91c2c-c530-4207-92d9-fd1cf88ad926" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEDriverServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/IEDriverServer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chromedriver1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PhotoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PhotoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegistrationForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Conditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BaseActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Locators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Locators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StorePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BlogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BlogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookNowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookNowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IframeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IframeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JoinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JoinTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PhotoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhotoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StoreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TourToUkrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TourToUkrainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PhotoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PhotoPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegistrationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegistrationForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SearchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Conditions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Conditions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StorePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StorePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BlogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BlogTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BookNowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BookNowTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/IframeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/IframeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/JoinTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/JoinTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PhotoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PhotoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/RegButtonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RegButtonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StoreTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TourToUkrainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TourToUkrainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ViewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ViewTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,47 +93,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegButtonTest.testRegButton" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTest.testLinksOnMinPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="romanceabroad" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomeTest" />
+      <option name="METHOD_NAME" value="testLinksOnMinPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoTest.testPhoto" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="romanceabroad" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PhotoTest" />
+      <option name="METHOD_NAME" value="testPhoto" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegButtonTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="romanceabroad" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RegButtonTest" />
-      <option name="METHOD_NAME" value="testRegButton" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.testSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.selectRandomDropDownList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="romanceabroad" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SearchTest" />
-      <option name="METHOD_NAME" value="testSearch" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StoreTest.testStore" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="romanceabroad" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StoreTest" />
-      <option name="METHOD_NAME" value="testStore" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ViewTest.testView" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="romanceabroad" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ViewTest" />
-      <option name="METHOD_NAME" value="testView" />
+      <option name="METHOD_NAME" value="selectRandomDropDownList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -117,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.D:/Automation/GitHub/romanceabroad/TestNG.xml" />
-        <item itemvalue="TestNG.RegButtonTest.testRegButton" />
-        <item itemvalue="TestNG.SearchTest.testSearch" />
-        <item itemvalue="TestNG.StoreTest.testStore" />
-        <item itemvalue="TestNG.ViewTest.testView" />
+        <item itemvalue="TestNG.PhotoTest.testPhoto" />
+        <item itemvalue="TestNG.SearchTest.selectRandomDropDownList" />
+        <item itemvalue="TestNG.HomeTest.testLinksOnMinPage" />
+        <item itemvalue="TestNG.RegButtonTest" />
       </list>
     </recent_temporary>
   </component>
