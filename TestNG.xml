@@ -2,24 +2,27 @@
 
 <suite name="TestSuite" parallel="none" >
 
-    <test name="IETestCases">
+    <!--<test name="IETestCases">
         <parameter name="browser" value="ie"/>
         <classes>
-            <class name ="PhotoTest"/>
+            <class name ="SearchTest"/>
         </classes>
     </test>
 
     <test name="FirefoxTestCases">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name ="PhotoTest"/>
+            <class name ="SearchTest"/>
         </classes>
-    </test>
+    </test>-->
 
     <test name="ChromeTestCases">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name ="PhotoTest"/>
+            <class name ="Conditions"/>
+            <class name ="JoinTest"/>
+            <class name ="RegButtonTest"/>
+            <class name ="SearchTest"/>
         </classes>
     </test>
 

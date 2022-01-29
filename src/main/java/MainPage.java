@@ -8,17 +8,21 @@ public class MainPage extends BaseActions {
     }
 
     public void clickJoinButton() {
-        driver.findElement(Locators.BUTTON_REGISTRATION).click();
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.BUTTON_REGISTRATION));
+        ajaxClick(driver.findElement(Locators.BUTTON_REGISTRATION));
+        //driver.findElement(Locators.BUTTON_REGISTRATION).click();
     }
 
     public void completeFirstPartOfRegistration() {
         //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_FIELD_EMAIL)));
         driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(Data.email);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.TEXT_FIELD_PASSWORD)));
         driver.findElement(Locators.TEXT_FIELD_PASSWORD).sendKeys(Data.password);
         wait.until(ExpectedConditions.elementToBeClickable(Locators.BUTTON));
-        driver.findElement(Locators.BUTTON).click();
-        driver.findElement(Locators.BUTTON).click();
+        ajaxClick(driver.findElement(Locators.BUTTON));
+        /*driver.findElement(Locators.BUTTON).click();
+        driver.findElement(Locators.BUTTON).click();*/
     }
 
     public void completeSecondPartOfRegistration() {

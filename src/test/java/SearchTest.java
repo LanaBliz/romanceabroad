@@ -1,8 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
+
 public class SearchTest extends BaseUI {
 
     @Test
@@ -15,7 +17,11 @@ public class SearchTest extends BaseUI {
         for (int i = 0; i < links.size(); i++) {
             String info = links.get(i).getText();
             System.out.println(info);
-            links.get(i).click();
+            wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
+            /*links.get(i).click();*/
+            mainPage.ajaxClick(links.get(i));
+            mainPage.javaWaitSec(5);
+
 
             if (info.contains("WORK")) {
                 actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
@@ -26,6 +32,7 @@ public class SearchTest extends BaseUI {
                 actualUrlSearch = driver.getCurrentUrl();
                 Assert.assertEquals(Data.expectedUrlSearch, actualTitle);
                 Assert.assertEquals(actualUrlSearch, Data.expectedUrlSearch);
+                wait.until(ExpectedConditions.elementToBeClickable(Locators.IMAGES));
                 driver.findElement(Locators.IMAGES).isDisplayed();
 
                 if (actualUrlSearch.contains("#")){
@@ -42,7 +49,12 @@ public class SearchTest extends BaseUI {
         Assert.assertTrue(driver.findElement(Locators.LINK_SEARCH).isDisplayed(), "Element is not displayed");
 
         String currentUrl;
-        driver.findElement(Locators.LINK_SEARCH).click();
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_SEARCH));
+        //driver.findElement(Locators.LINK_SEARCH).click();
+        mainPage.ajaxClick(driver.findElement(Locators.LINK_SEARCH));
+        mainPage.javaWaitSec(5);
+
+
         currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);
         Assert.assertEquals(currentUrl, Data.expectedUrlSearch);
@@ -65,12 +77,15 @@ public class SearchTest extends BaseUI {
 
     @Test
     public void selectRandomDropDownList(){
-        driver.findElement(Locators.LINK_SEARCH).click();
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_SEARCH));
+        /*driver.findElement(Locators.LINK_SEARCH).click();*/
+        mainPage.ajaxClick(driver.findElement(Locators.LINK_SEARCH));
+        mainPage.javaWaitSec(5);
         int sizeOfDropDownListSortBy = searchPage.getSizeDropDownList(Locators.DROP_DOWN_LIST_MAX_AGE);
         System.out.println(sizeOfDropDownListSortBy);
-        for (int i = 0; i < sizeOfDropDownListSortBy; i++) {
+        for (int i = 0; i < 5; i++) {
             searchPage.selectItemDropDownRandomOption(Locators.DROP_DOWN_LIST_MAX_AGE,"Sort by");
-            mainPage.javaWaitSec(3);
+            mainPage.javaWaitSec(5);
         }
     }
 }

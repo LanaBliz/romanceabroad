@@ -1,5 +1,3 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -93,7 +91,7 @@ public class Conditions extends BaseUI {
     public void test7() {
         String actualTitle;
         String actualUrlPrettyWomen;
-        String expectedTitleHowWeWork = "Ukrainian women for marriage";
+        String expectedTitleHowWeWork = "UKRAINIAN GIRLS DATING SITE";
         List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
         for (int i = 0; i < links.size(); i++) {
@@ -171,26 +169,27 @@ public class Conditions extends BaseUI {
 
     @Test
     public void test10 (){
-       mainPage.ajaxClick(Locators.TAB_OF_MAIN_PAGE, 3);
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
+        mainPage.ajaxClick(Locators.TAB_OF_MAIN_PAGE, 3);
     }
 
     @Test
     public void test11 (){
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
         mainPage.perfomClick(Locators.TAB_OF_MAIN_PAGE);
     }
 
     @Test
     public void test12 (){
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
         mainPage.perfomClick(Locators.TAB_OF_MAIN_PAGE, 4);
     }
 
     @Test
     public void test13 (){
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
         mainPage.scrollToBottomOfPage();
     }
-
-
-
 
 }
 

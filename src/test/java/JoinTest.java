@@ -1,3 +1,4 @@
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -6,8 +7,9 @@ public class JoinTest extends BaseUI{
 
     @Test
     public void testJoin(){
-        //ajaxClick(driver.findElement(Locators.LINK_JOIN));
-        driver.findElement(Locators.LINK_JOIN).click();
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_JOIN));
+        mainPage.ajaxClick(driver.findElement(Locators.LINK_JOIN));
+        //driver.findElement(Locators.LINK_JOIN).click();
         currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);
         Assert.assertEquals(currentUrl, Data.expectedUrlHome);

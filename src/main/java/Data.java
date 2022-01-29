@@ -18,11 +18,13 @@ public class Data {
 
     //Search Test
     public static final String expectedUrlSearch = "https://romanceabroad.com/users/search";
+
     //public static final String expectedUrlSearch = "Single Ukrainian women online";
     public static final int dropDownListSortByIndex = 3;
     public static final String dropDownListMinAgeValue = "21";
     public static final String dropDownListMaxAgeText = "25";
-    public static final String expectedTitleHowWeWork = "Ukrainian women for marriage";
+    //"Ukrainian women for marriage"
+    public static final String expectedTitleHowWeWork = "UKRAINIAN GIRLS DATING SITE";
 
     //Store Test
     public static final String expectedUrlSStore = "https://romanceabroad.com/store/category-sweets";

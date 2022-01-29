@@ -2,12 +2,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class HomeTest extends BaseUI {
-    String currentUrl;
 
     @Test
     public void testHome() {
         String currentUrl;
-        driver.findElement(Locators.LINK_HOME).click();
+        mainPage.ajaxClick(driver.findElement(Locators.LINK_HOME));
         currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);
         Assert.assertEquals(currentUrl, Data.expectedUrlHome);
@@ -28,6 +27,5 @@ public class HomeTest extends BaseUI {
         mainPage.checkLinksOnWebPage("//a","href");
         mainPage.checkLinksOnWebPage("//img","src");
     }
-
 
 }
