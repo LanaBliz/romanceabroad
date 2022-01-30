@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dd91c2c-c530-4207-92d9-fd1cf88ad926" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StorePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BlogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BlogTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BookNowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookNowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Conditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JoinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JoinTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TourToUkrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TourToUkrainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ViewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StorePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StorePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BlogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BlogTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BookNowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BookNowTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Conditions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Conditions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/JoinTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/JoinTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SearchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StoreTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TourToUkrainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TourToUkrainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ViewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ViewTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="6dd91c2c-c530-4207-92d9-fd1cf88ad926" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
