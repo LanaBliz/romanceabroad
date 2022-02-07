@@ -4,8 +4,10 @@ import org.testng.annotations.Test;
 
 public class IframeTest extends BaseUI {
 
-    @Test
-    public void TestIframe() {
+    public static final boolean testCase20 = true;
+
+    @Test(priority = 1, enabled = testCase20, groups = {"user", "admin"})
+    public void TestIframeCase20() {
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.LINK_IFRAME)));
         WebElement ele = driver.findElement(Locators.LINK_IFRAME);
         driver.switchTo().frame(ele);

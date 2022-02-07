@@ -6,8 +6,10 @@ import java.util.concurrent.TimeUnit;
 
 public class RegButtonTest extends BaseUI{
 
-    @Test
-    public void testRegButton(){
+    public static final boolean testCase23 = true;
+
+    @Test(priority = 1, enabled = testCase23, groups = {"user", "admin"})
+    public void testRegButtonCase23(){
         mainPage.clickJoinButton();
         if (!driver.findElement(Locators.TEXT_FIELD_EMAIL).isDisplayed()) {
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

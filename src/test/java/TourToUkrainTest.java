@@ -4,8 +4,10 @@ import org.testng.annotations.Test;
 
 public class TourToUkrainTest extends BaseUI {
 
-    @Test
-    public void testTourToUkraine() {
+    public static final boolean testCase28 = true;
+
+    @Test(priority = 1, enabled = testCase28, groups = {"user", "admin"})
+    public void testTourToUkraineCase28() {
         String currentUrl;
         int indexLinkTourToUkraine = 1;
         wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_TOUR_TO_UKRAINE));

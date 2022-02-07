@@ -5,8 +5,10 @@ import org.testng.annotations.Test;
 public class JoinTest extends BaseUI{
     String currentUrl;
 
-    @Test
-    public void testJoin(){
+    public static final boolean testCase21 = true;
+
+    @Test(priority = 1, enabled = testCase21, groups = {"user", "admin"})
+    public void testJoinCase21(){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_JOIN));
         mainPage.ajaxClick(driver.findElement(Locators.LINK_JOIN));
         //driver.findElement(Locators.LINK_JOIN).click();

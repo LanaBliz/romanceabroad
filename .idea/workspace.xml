@@ -7,12 +7,32 @@
     <list default="true" id="6dd91c2c-c530-4207-92d9-fd1cf88ad926" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Conditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BlogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BlogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookNowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookNowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Conditions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Conditions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IframeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IframeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JoinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JoinTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PhotoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhotoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StoreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TourToUkrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TourToUkrainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Locators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Locators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BlogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BlogTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BookNowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BookNowTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/IframeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/IframeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/JoinTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/JoinTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PhotoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PhotoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RegButtonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RegButtonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StoreTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TourToUkrainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TourToUkrainTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ViewTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ViewTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,24 +71,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomeTest.smokeTestHomePage">
+  <component name="RunManager" selected="TestNG.HomeTest.smokeTestHomePageCase19">
     <configuration name="Conditions.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="romanceabroad" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Conditions" />
       <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Conditions.test5" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="romanceabroad" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Conditions" />
-      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -98,6 +106,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HomeTest.smokeTestHomePageCase19" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="romanceabroad" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomeTest" />
+      <option name="METHOD_NAME" value="smokeTestHomePageCase19" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JoinTest.testJoin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="romanceabroad" />
       <option name="PACKAGE_NAME" value="" />
@@ -112,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomeTest.smokeTestHomePageCase19" />
+        <item itemvalue="TestNG.D:/Automation/GitHub/romanceabroad/TestNG.xml" />
         <item itemvalue="TestNG.HomeTest.smokeTestHomePage" />
         <item itemvalue="TestNG.Conditions.test1" />
-        <item itemvalue="TestNG.D:/Automation/GitHub/romanceabroad/TestNG.xml" />
         <item itemvalue="TestNG.JoinTest.testJoin" />
-        <item itemvalue="TestNG.Conditions.test5" />
       </list>
     </recent_temporary>
   </component>

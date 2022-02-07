@@ -2,7 +2,7 @@
 
 <suite name="TestSuite" parallel="none" >
 
-    <test name="IETestCases">
+   <!-- <test name="IETestCases">
         <parameter name="browser" value="ie"/>
         <classes>
             <class name ="SearchTest"/>
@@ -14,23 +14,29 @@
         <classes>
             <class name ="SearchTest"/>
         </classes>
-    </test>
+    </test>-->
 
     <test name="ChromeTestCases">
         <parameter name="browser" value="chrome"/>
-        <!--<groups>
+        <groups>
             <run>
                 <exclude name="ie"/>
                 <include name="user" />
                 <include name="admin" />
             </run>
-        </groups>-->
+        </groups>
         <classes>
-            <class name ="BlogTest"/>
+            <!--<class name ="BlogTest"/>
             <class name ="BookNowTest"/>
-            <class name ="Conditions"/>
-            <class name ="HomeTest"/>
-            <class name ="IframeTest"/>
+            <class name ="Conditions"/>-->
+            <class name ="HomeTest">
+            <methods>
+                <include name=".*Home.*"/>
+                <include name=".*OnMin.*"/>
+                <exclude name=".*You.*"/>
+            </methods>
+            </class>
+            <!--<class name ="IframeTest"/>
             <class name ="JoinTest"/>
             <class name ="PhotoTest"/>
             <class name ="RegButtonTest"/>
@@ -38,7 +44,7 @@
             <class name ="SignIn"/>
             <class name ="StoreTest"/>
             <class name ="TourToUkrainTest"/>
-            <class name ="ViewTest"/>
+            <class name ="ViewTest"/>-->
         </classes>
     </test>
 

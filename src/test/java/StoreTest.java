@@ -5,8 +5,10 @@ import org.testng.annotations.Test;
 public class StoreTest extends BaseUI{
     String currentUrl;
 
-    @Test
-    public void testStore(){
+    public static final boolean testCase27 = true;
+
+    @Test(priority = 1, enabled = testCase27, groups = {"user", "admin"})
+    public void testStoreCase27(){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_STORE));
         mainPage.ajaxClick(driver.findElement(Locators.LINK_STORE));
         mainPage.javaWaitSec(5);

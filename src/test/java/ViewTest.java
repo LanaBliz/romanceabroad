@@ -4,8 +4,10 @@ import org.testng.annotations.Test;
 
 public class ViewTest extends BaseUI{
 
-    @Test
-    public void testView(){
+    public static final boolean testCase29 = true;
+
+    @Test(priority = 4, enabled = testCase29, groups = {"user", "admin"})
+    public void testViewCase29(){
         String currentUrl;
         wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_VIEW));
         mainPage.ajaxClick(driver.findElement(Locators.LINK_VIEW));

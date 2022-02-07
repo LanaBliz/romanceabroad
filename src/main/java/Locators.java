@@ -10,6 +10,7 @@ public class Locators {
 
     //Home test
     public static final By LINK_HOME = By.xpath("//a[contains(text(),'HOME')]");
+    public static final By MAIN_TABS = By.xpath("//ul[@class='navbar-nav']//li/a");
 
     //Join Test and Reg Button Test
     public static final By TEXT_FIELD_EMAIL = By.xpath("//input[@id='email']");

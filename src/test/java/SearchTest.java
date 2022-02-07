@@ -7,8 +7,11 @@ import java.util.List;
 
 public class SearchTest extends BaseUI {
 
-    @Test
-    public void testSearch() {
+    public static final boolean testCase24 = true;
+    public static final boolean testCase25 = true;
+
+    @Test(priority = 1, enabled = testCase24, groups = {"user", "admin"})
+    public void testSearchCase24() {
         String actualTitle;
         String actualUrlSearch;
 
@@ -75,8 +78,8 @@ public class SearchTest extends BaseUI {
         Assert.fail("Element is not displayed");
     }
 
-    @Test
-    public void selectRandomDropDownList(){
+    @Test(priority = 1, enabled = testCase25, groups = {"user", "admin"})
+    public void selectRandomDropDownListCase25(){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_SEARCH));
         /*driver.findElement(Locators.LINK_SEARCH).click();*/
         mainPage.ajaxClick(driver.findElement(Locators.LINK_SEARCH));
