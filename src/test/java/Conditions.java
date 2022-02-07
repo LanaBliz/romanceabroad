@@ -9,8 +9,22 @@ import java.util.List;
 
 public class Conditions extends BaseUI {
 
-    @Test
-    public void test1() {
+    public static final boolean testCase1 = true;
+    public static final boolean testCase2 = true;
+    public static final boolean testCase3 = true;
+    public static final boolean testCase4 = true;
+    public static final boolean testCase5 = true;
+    public static final boolean testCase6 = true;
+    public static final boolean testCase7 = true;
+    public static final boolean testCase8 = true;
+    public static final boolean testCase9 = true;
+    public static final boolean testCase10 = true;
+    public static final boolean testCase11 = true;
+    public static final boolean testCase12 = true;
+    public static final boolean testCase13 = true;
+
+    @Test(priority = 1, enabled = testCase1, groups = {"user", "admin"})
+    public void testCase1() {
         String fruit = "orange";
         String fruit2 = "kiwi";
 
@@ -22,8 +36,8 @@ public class Conditions extends BaseUI {
 
     }
 
-    @Test
-    public void test2() {
+    @Test(priority = 2, enabled = testCase2, groups = {"ie"})
+    public void testCase2() {
         int number1 = 10;
         int number2 = 10;
         int sum;
@@ -36,8 +50,8 @@ public class Conditions extends BaseUI {
         System.out.println(sum);
     }
 
-    @Test
-    public void test3() {
+    @Test(priority = 3, enabled = testCase3, groups = {"ie"})
+    public void testCase3() {
         boolean requirement = false;
         if (!requirement) {
             System.out.println("Boolean is true!");
@@ -46,8 +60,8 @@ public class Conditions extends BaseUI {
         }
     }
 
-    @Test
-    public void test4() {
+    @Test(priority = 4, enabled = testCase4, groups = {"ie"})
+    public void testCase4() {
         WebElement tabSearch = driver.findElement(Locators.LINK_SEARCH);
         if (tabSearch.isDisplayed()) {
             tabSearch.click();
@@ -57,8 +71,8 @@ public class Conditions extends BaseUI {
 
     }
 
-    @Test
-    public void test5() {
+    @Test(priority = 5, enabled = testCase5, groups = {"ie"})
+    public void testCase5() {
         mainPage.clickJoinButton();
         registrationForm.getStarted();
 
@@ -71,8 +85,8 @@ public class Conditions extends BaseUI {
 
     }
 
-    @Test
-    public void test6() {
+    @Test(priority = 6, enabled = testCase6, groups = {"ie"})
+    public void testCase6() {
         /*List<String> crunchifyList1 = new ArrayList<>(Arrays.asList("kiwi", "orange"));
         String element = crunchifyList1.get(0);
         System.out.println(element);
@@ -87,8 +101,8 @@ public class Conditions extends BaseUI {
 
     }
 
-    @Test
-    public void test7() {
+    @Test(priority = 7, enabled = testCase7, groups = {"ie"})
+    public void testCase7() {
         String actualTitle;
         String actualUrlPrettyWomen;
         String expectedTitleHowWeWork = "UKRAINIAN GIRLS DATING SITE";
@@ -127,8 +141,8 @@ public class Conditions extends BaseUI {
 
     }
 
-    @Test
-    public void test8() {
+    @Test(priority = 8, enabled = testCase8, groups = {"ie"})
+    public void testCase8() {
         List<Integer> crunchifyList1 = new ArrayList<>(Arrays.asList(5, 10, 19));
         crunchifyList1.add(10);
         System.out.println(crunchifyList1.size());
@@ -140,8 +154,8 @@ public class Conditions extends BaseUI {
 
     }
 
-    @Test
-    public void test9() {
+    @Test(priority = 9, enabled = testCase9, groups = {"ie"})
+    public void testCase9() {
         String phrase = "Melon is inside list";
         List<String> crunchifyList1 = new ArrayList<>(Arrays.asList("apple", "kiwi", phrase));
         crunchifyList1.add("melon");
@@ -167,26 +181,26 @@ public class Conditions extends BaseUI {
 
     }
 
-    @Test
-    public void test10 (){
+    @Test(priority = 10, enabled = testCase10, groups = {"ie"})
+    public void testCase10 (){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
         mainPage.ajaxClick(Locators.TAB_OF_MAIN_PAGE, 3);
     }
 
-    @Test
-    public void test11 (){
+    @Test(priority = 11, enabled = testCase11, groups = {"ie"})
+    public void testCase11 (){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
         mainPage.perfomClick(Locators.TAB_OF_MAIN_PAGE);
     }
 
-    @Test
-    public void test12 (){
+    @Test(priority = 12, enabled = testCase12, groups = {"ie"})
+    public void testCaase12 (){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
         mainPage.perfomClick(Locators.TAB_OF_MAIN_PAGE, 4);
     }
 
-    @Test
-    public void test13 (){
+    @Test(priority = 13, enabled = testCase13, groups = {"ie"})
+    public void testCasee13 (){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_OF_MAIN_PAGE));
         mainPage.scrollToBottomOfPage();
     }
